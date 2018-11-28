@@ -1,0 +1,26 @@
+{
+  "name": "ReactNativeSNSTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.6.1",
+    "react-native": "0.56.0",
+    "react-native-fbsdk": "^0.8.0",
+    "react-native-firebase": "^5.1.1",
+    "react-native-google-signin": "^1.0.1",
+    "react-native-twitter-signin": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
