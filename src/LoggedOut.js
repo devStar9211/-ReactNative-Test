@@ -74,8 +74,8 @@ export default class LoggedOut extends Component<Props> {
   // Twitter ログイン
   onTwitterLoginOrRegister = () => {
     const Constants = {
-      TWITTER_COMSUMER_KEY: 'qWPj1TXbreMX1SsDvdiQTaF7Y',
-      TWITTER_CONSUMER_SECRET: '4t0cRfGWXZvySIa5sS0M38AnT8a8B8hwcX2lZiaStSWStD4B4Z'
+      TWITTER_COMSUMER_KEY: 'ccXz7oA8BpVAwbfC35wvyhKfh',
+      TWITTER_CONSUMER_SECRET: 'ZY1asB6cWXOPMfeCtVMmTnRgSXIJ2na1Ss6j48PzayoF4UNsRP'
     };
 
     RNTwitterSignIn.init(Constants.TWITTER_COMSUMER_KEY, Constants.TWITTER_CONSUMER_SECRET)

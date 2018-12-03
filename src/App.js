@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import { ActivityIndicator, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, View, Alert, Platform } from 'react-native';
 import firebase from 'react-native-firebase';
 import LoggedOut from './LoggedOut';
 import LoggedIn from './LoggedIn';
@@ -54,12 +54,73 @@ export default class App extends Component<Props> {
 
     this.notificationDisplayedListener = firebase.notifications().onNotificationDisplayed((notification: Notification) => {
       // push通知の表示時に呼び出される。
-      alert(JSON.stringify(notification))
+      const {
+        body,
+        data,
+        notificationId,
+        sound,
+        subtitle,
+        title
+      } = notification;
+      Alert.alert(
+        title, body,
+        [
+            { text: 'OK', onPress: () => console.log('OK Pressed') },
+        ],
+        { cancelable: false },
+      );
 
+    //   firebase.messaging().createLocalNotification({
+    //     body: body,
+    //     icon: "ic_launcher",
+    //     show_in_foreground: "true",
+    //     title: title,
+    //     local_notification: "true",
+    //     priority: "high",
+    //     click_action:"ACTION"
+    //  });
     });
     this.notificationListener = firebase.notifications().onNotification((notification: Notification) => {
       // push通知受信時に呼び出される。
-      alert(JSON.stringify(notification))
+      const {
+        body,
+        data,
+        notificationId,
+        sound,
+        subtitle,
+        title
+      } = notification;
+      Alert.alert(
+        title, body,
+        [
+            { text: 'OK', onPress: () => console.log('OK Pressed') },
+        ],
+        { cancelable: false },
+      );
+  
+      const localNotification = new firebase.notifications.Notification({
+        sound: 'default',
+        show_in_foreground: true,
+      })
+      .setNotificationId(notification.notificationId)
+      .setTitle(notification.title)
+      .setSubtitle(notification.subtitle)
+      .setBody(notification.body);
+
+      if (Platform.OS === 'android') {
+          localNotification
+              .android.setChannelId(CHANNEL_ID)
+              .android.setSmallIcon('notification_logo')
+              .android.setColor('#FFFFFF')
+              .android.setPriority(firebase.notifications.Android.Priority.High);
+      }
+
+      if (Platform.OS === 'ios') {
+          localNotification
+              .ios.setBadge(notification.ios.badge);
+      }
+
+      firebase.notifications().displayNotification(localNotification);
     });
   }
 

@@ -35,6 +35,7 @@ target 'ReactNativeSNSTest' do
   pod 'GoogleSignIn'
   
   pod 'TwitterKit', '~> 3.3.0'
+
   pod 'react-native-twitter-signin', :path => '../node_modules/react-native-twitter-signin'
 
 end
