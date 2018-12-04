@@ -41,7 +41,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.982226790524-q0iuip6j8mr7kgm9dsa12mt4cmlscf2g</string>
+				<string>com.googleusercontent.apps.982226790524-iiqjmv54uqr63d60ocvkeu2lfdtf6iao</string>
 			</array>
 		</dict>
 	</array>
@@ -50,7 +50,7 @@
 	<key>FacebookAppID</key>
 	<string>338548693608071</string>
 	<key>FacebookDisplayName</key>
-	<string>Delipo Sunrex&apos;s first app</string>
+	<string>Delipo Sunrex's first app</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<true/>
 	<key>LSApplicationQueriesSchemes</key>

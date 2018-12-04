@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>982226790524-q0iuip6j8mr7kgm9dsa12mt4cmlscf2g.apps.googleusercontent.com</string>
+	<string>982226790524-iiqjmv54uqr63d60ocvkeu2lfdtf6iao.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.982226790524-q0iuip6j8mr7kgm9dsa12mt4cmlscf2g</string>
+	<string>com.googleusercontent.apps.982226790524-iiqjmv54uqr63d60ocvkeu2lfdtf6iao</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB_YRaPNU5k7yTnlIa4aw91LtO1fneZ_Ks</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.goukaku-suppli.app</string>
+	<string>com.delipo.snstest</string>
 	<key>PROJECT_ID</key>
 	<string>delipo-sunrex</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:982226790524:ios:d68e6a14bd9abc0f</string>
+	<string>1:982226790524:ios:57561ad4f09ac6a5</string>
 	<key>DATABASE_URL</key>
 	<string>https://delipo-sunrex.firebaseio.com</string>
 </dict>

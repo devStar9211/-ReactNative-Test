@@ -644,7 +644,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 7DCK63D485;
+						DevelopmentTeam = 547KDXKG79;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1147,7 +1147,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReactNativeSNSTest/ReactNativeSNSTest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 7DCK63D485;
+				DEVELOPMENT_TEAM = 547KDXKG79;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
@@ -1159,7 +1159,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goukaku-suppli.app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delipo.snstest;
 				PRODUCT_NAME = ReactNativeSNSTest;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1172,7 +1172,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ReactNativeSNSTest/ReactNativeSNSTest.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7DCK63D485;
+				DEVELOPMENT_TEAM = 547KDXKG79;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
@@ -1184,7 +1184,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.goukaku-suppli.app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.delipo.snstest;
 				PRODUCT_NAME = ReactNativeSNSTest;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
